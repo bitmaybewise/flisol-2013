@@ -1,0 +1,9 @@
+<h1>Soma</h1>
+
+<%= form_tag("/calc/resultado", method: "post") do %>
+  <%= label_tag(:primeiro, "primeiro") %>
+  <%= text_field_tag(:primeiro) %>
+  <%= label_tag(:segundo, "segundo") %>
+  <%= text_field_tag(:segundo) %>
+  <%= submit_tag("somar") %>
+<% end %>
